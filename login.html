@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>IFmat | Login </title>
+		<meta charset="UTF-8">
+        <i class="fab fa-facebook"></i>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="sortcut icon" href="icon.png" type="image/png"/>
+
+        <style>
+            body{
+                background-color: green;
+                text-align: center;
+            }
+
+            main.container{
+                background-color: white;
+                min-height: 40vh;
+                max-width: 250px;
+                padding: 2rem;
+                box-shadow: 5px 5px 15px rgba(0,0,0, 0.6);
+                border-radius: 12px;
+                
+            }
+
+            main h2{
+                color: black;
+                margin-bottom: 20px;
+                position: relative;
+            }
+
+            form{
+                display: flex;
+                flex-direction: column;
+            }
+
+
+            .input-field{
+                position: relative;
+            }
+
+            form .input-field:first-child{
+                margin-bottom: 5px;
+            }
+
+            .input-field input{
+                outline: none;
+            }
+
+            form input[type="submit"]{
+                margin-top: 20px;
+                padding: 4px;
+                cursor: pointer;
+                font-size: 15px;
+                border-radius: 8px;
+                background-color: black;
+                color: white;
+            }
+
+            .footer{
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+            }
+
+            .footer span{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: small;
+            }
+
+            .footer .social-field{
+                border-radius: 2px;
+                padding: 10px;
+                font-size: 16px;
+                margin: 5px;
+            }
+
+            .footer .social-field a{
+                text-decoration: none;
+                color: white;
+            }
+
+            
+            .footer .social-field.facebook{
+                background: linear-gradient(to right, #1e3c72, #2a5298);
+            }
+            
+        </style>
+
+        <script>
+            function validacao() {
+                if(document.form.username.value==""){
+                    alert("por favor, preencha o campo nome");
+                    document.form.username.focus();
+                    return false;
+                } /* dentro desta função, está sendo verificado se o usuário preencheu o campo "nome de usuário", se não
+                    houver preenchimento do mesmo, o código emite uma alerta avisando para o usuário preencher o determinado 
+                    campo, ainda assim caso não obtenha resposta dentro dos padrões predefinidos, o código não permitirá o envio
+                     dos dados. */
+
+                if (document.form.password.value.length<8){
+                    alert("a senha deve conter no mínimo 8 digitos");
+                    document.form.password.focus();
+                    return false;
+                } /* dentro desta função, está sendo verificado se o usuário preencheu o campo "senha" de acordo com a exigência pré
+                  estabelecida de no mínio 8 dígitos, se não houver preenchimento do mesmo, o código emite uma alerta avisando para o 
+                  usuário preencher o determinado campo, seguindo as orientações.*/
+            }
+        </script>
+
+	</head>  
+
+    <body style="background-image: url(math.png); background-repeat: no-repeat;">
+
+        <div id="menum">
+			<a href="index1.html">VOLTAR AO MENU</a>
+		</div>
+        <br><br><br><br><br>
+        <main class="container">
+            <h2 style="font-family: fantasy; font-weight: lighter;">LOGIN</h2>
+            <form action="confirmacao1.html" onsubmit="return validacao();">
+                <div class="input-field">
+                    <input type="text" name="username" id="username" placeholder="seu nome de usuário" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" required="required";>
+                    <div class="underline"></div>
+                </div>
+                <div class="input-field">
+                    <input type="password" name="password" id="password" placeholder="sua senha" required="required";>
+                    <div class="underline"></div>
+                </div>
+
+                <input type="submit" value="CONFIRMAR">
+            </form>
+
+            <div class="footer">
+                <div class="social-fields">
+                    <div class="social-field facebook">
+                        <a href="#">
+                            <i class="fab fa-facebook"></i>
+                            LOGIN COM FACEBOOK
+                        </a>
+        
+                </div>
+            </div>
+        </main>
+
+
+    </body>
+</html>

@@ -1,0 +1,136 @@
+body{
+    background-color: black;
+}
+
+*{
+    margin: 0%; 
+    padding: 0%;
+    font-family: fantasy;
+}
+
+#header1{
+    background-image: url(math.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#header1 ul{
+    float: left;
+    list-style-type: none;
+    margin-top: 42px;
+    margin-left: 5%;
+}
+
+#header1 ul li{
+    display: inline-block;
+}
+
+#header1 ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 25px;
+    transition: 0.2s ease;
+    clear: both;
+}
+
+#header1 ul li a:hover{
+    border: solid honeydew 0.3px;
+    border-radius: 8%;
+}
+
+.logo img{
+    float: left;
+    width: 90px;
+    height: auto;
+}
+
+th{
+    font-family: fantasy;
+    font-size: 17px;
+}
+
+.menumath{
+    max-width: 1300px;
+    margin: auto;
+}
+
+
+.title{
+    position: absolute;
+    top: 55%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0.1em 0.1em 0.4em black
+}
+
+.botoes{
+    position: absolute;
+    top: 65%;
+    right: 54.1%;
+    transform: translate(-50%, -50%);
+}
+
+.bt{
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.bt:hover{
+    background-color: white;
+    color: green;
+    border-radius: 10px;
+}
+
+
+.container{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.efeito{
+    background-color: rgba(0, 0, 0, 0.13);
+    padding: 10px 0 100px 0;
+}
+
+
+#menum {
+    color: white;
+    float: left;
+    margin: 25px;
+}
+
+#menum a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+
+#menum a:hover{
+    border: solid white 0.7px; 
+    border-radius: 7%;
+}
+
+#div1{
+    float: right;
+}
+
+#div2{
+    float: left;
+}
+
+#v1{
+    margin: 50px;
+}
+
+#v2{
+    margin: 50px;
+}
+
+#v3{
+    margin: 50px;
+}
+
