@@ -4,9 +4,9 @@
         <title>IFmat | Login </title>
 		<meta charset="UTF-8">
         <i class="fab fa-facebook"></i>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="sortcut icon" href="icon.png" type="image/png"/>
-
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<link rel="sortcut icon" href="assets/icon.png" type="image/png"/>
+        <!--REMOVER O CSS DAQUI E COLOCAR EM UM ARQUIVO EXTERNO-->
         <style>
             body{
                 background-color: green;
@@ -87,30 +87,12 @@
             
         </style>
 
-        <script>
-            function validacao() {
-                if(document.form.username.value==""){
-                    alert("por favor, preencha o campo nome");
-                    document.form.username.focus();
-                    return false;
-                } /* dentro desta função, está sendo verificado se o usuário preencheu o campo "nome de usuário", se não
-                    houver preenchimento do mesmo, o código emite uma alerta avisando para o usuário preencher o determinado 
-                    campo, ainda assim caso não obtenha resposta dentro dos padrões predefinidos, o código não permitirá o envio
-                     dos dados. */
 
-                if (document.form.password.value.length<8){
-                    alert("a senha deve conter no mínimo 8 digitos");
-                    document.form.password.focus();
-                    return false;
-                } /* dentro desta função, está sendo verificado se o usuário preencheu o campo "senha" de acordo com a exigência pré
-                  estabelecida de no mínio 8 dígitos, se não houver preenchimento do mesmo, o código emite uma alerta avisando para o 
-                  usuário preencher o determinado campo, seguindo as orientações.*/
-            }
-        </script>
+
 
 	</head>  
 
-    <body style="background-image: url(math.png); background-repeat: no-repeat;">
+    <body style="background-image: url(assets/math.png); background-repeat: no-repeat;">
 
         <div id="menum">
 			<a href="index1.html">VOLTAR AO MENU</a>
@@ -143,6 +125,7 @@
             </div>
         </main>
 
-
+        <!--SCRIPTS-->
+        <script src="../ifmat/scripts/login.js"> </script>
     </body>
 </html>
