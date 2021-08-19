@@ -9,7 +9,7 @@ body{
 }
 
 #header1{
-    background-image: url(math.png);
+    background-image: url(../assets/math.png);
     height: 100vh;
     background-size: cover;
     background-position: center;
